@@ -4,7 +4,7 @@ const button = document.querySelector("header button")
 
 let animationRun = bodymovin.loadAnimation({
   container: document.getElementById("animation-run"),
-  path: "jumping-Lunges.json",
+  path: "jumping-lunges.json",
   render: "svg",
   loop: true,
   autoplay: true,
