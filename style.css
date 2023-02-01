@@ -76,7 +76,7 @@ button {
 .day {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 45px;
 }
 
 .day div {
@@ -115,4 +115,25 @@ input:checked {
   button div {
     display: none;
   }
+}
+
+/* Animações */
+#animation-run {
+  width: 100px;
+  height: 100px;
+}
+
+#animation-water {
+  width: 80px;
+  height: 80px;
+}
+
+#animation-fruit {
+  width: 80px;
+  height: 80px;
+}
+
+#animation-book {
+  width: 80px;
+  height: 80px;
 }

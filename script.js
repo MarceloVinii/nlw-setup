@@ -2,6 +2,38 @@ const form = document.querySelector("#form-habits")
 const nlwSetup = new NLWSetup(form)
 const button = document.querySelector("header button")
 
+let animationRun = bodymovin.loadAnimation({
+  container: document.getElementById("animation-run"),
+  path: "jumping-Lunges.json",
+  render: "svg",
+  loop: true,
+  autoplay: true,
+})
+
+let animationWater = bodymovin.loadAnimation({
+  container: document.getElementById("animation-water"),
+  path: "water.json",
+  render: "svg",
+  loop: true,
+  autoplay: true,
+})
+
+let animationFruit = bodymovin.loadAnimation({
+  container: document.getElementById("animation-fruit"),
+  path: "fruits.json",
+  render: "svg",
+  loop: false,
+  autoplay: true,
+})
+
+let animationBook = bodymovin.loadAnimation({
+  container: document.getElementById("animation-book"),
+  path: "book-reading.json",
+  render: "svg",
+  loop: true,
+  autoplay: true,
+})
+
 button.addEventListener("click", add)
 form.addEventListener("change", save)
 
